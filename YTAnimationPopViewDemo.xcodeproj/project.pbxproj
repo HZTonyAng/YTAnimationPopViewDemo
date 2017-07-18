@@ -15,6 +15,8 @@
 		716A94DE1F1DB55100320A68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716A94DC1F1DB55100320A68 /* LaunchScreen.storyboard */; };
 		716A94E91F1DB55200320A68 /* YTAnimationPopViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A94E81F1DB55200320A68 /* YTAnimationPopViewDemoTests.m */; };
 		716A94F41F1DB55200320A68 /* YTAnimationPopViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A94F31F1DB55200320A68 /* YTAnimationPopViewDemoUITests.m */; };
+		716A95041F1DB91800320A68 /* HWPopTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A95031F1DB91800320A68 /* HWPopTool.m */; };
+		716A95071F1DBA4500320A68 /* YTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A95061F1DBA4500320A68 /* YTViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		716A94EF1F1DB55200320A68 /* YTAnimationPopViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YTAnimationPopViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		716A94F31F1DB55200320A68 /* YTAnimationPopViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTAnimationPopViewDemoUITests.m; sourceTree = "<group>"; };
 		716A94F51F1DB55200320A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		716A95021F1DB91800320A68 /* HWPopTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPopTool.h; sourceTree = "<group>"; };
+		716A95031F1DB91800320A68 /* HWPopTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPopTool.m; sourceTree = "<group>"; };
+		716A95051F1DBA4500320A68 /* YTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTViewController.h; sourceTree = "<group>"; };
+		716A95061F1DBA4500320A68 /* YTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,13 @@
 		716A94CD1F1DB55100320A68 /* YTAnimationPopViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				716A95011F1DB91800320A68 /* HWPoTools */,
 				716A94D11F1DB55100320A68 /* AppDelegate.h */,
 				716A94D21F1DB55100320A68 /* AppDelegate.m */,
 				716A94D41F1DB55100320A68 /* ViewController.h */,
 				716A94D51F1DB55100320A68 /* ViewController.m */,
+				716A95051F1DBA4500320A68 /* YTViewController.h */,
+				716A95061F1DBA4500320A68 /* YTViewController.m */,
 				716A94D71F1DB55100320A68 /* Main.storyboard */,
 				716A94DA1F1DB55100320A68 /* Assets.xcassets */,
 				716A94DC1F1DB55100320A68 /* LaunchScreen.storyboard */,
@@ -138,6 +147,15 @@
 				716A94F51F1DB55200320A68 /* Info.plist */,
 			);
 			path = YTAnimationPopViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		716A95011F1DB91800320A68 /* HWPoTools */ = {
+			isa = PBXGroup;
+			children = (
+				716A95021F1DB91800320A68 /* HWPopTool.h */,
+				716A95031F1DB91800320A68 /* HWPopTool.m */,
+			);
+			path = HWPoTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +225,7 @@
 				TargetAttributes = {
 					716A94CA1F1DB55100320A68 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = WEEDGBG93S;
+						DevelopmentTeam = HM5T4U55XX;
 						ProvisioningStyle = Automatic;
 					};
 					716A94E31F1DB55200320A68 = {
@@ -276,8 +294,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				716A95071F1DBA4500320A68 /* YTViewController.m in Sources */,
 				716A94D61F1DB55100320A68 /* ViewController.m in Sources */,
 				716A94D31F1DB55100320A68 /* AppDelegate.m in Sources */,
+				716A95041F1DB91800320A68 /* HWPopTool.m in Sources */,
 				716A94D01F1DB55100320A68 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,7 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WEEDGBG93S;
+				DEVELOPMENT_TEAM = HM5T4U55XX;
 				INFOPLIST_FILE = YTAnimationPopViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TonyAng.YTAnimationPopViewDemo;
@@ -441,7 +461,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WEEDGBG93S;
+				DEVELOPMENT_TEAM = HM5T4U55XX;
 				INFOPLIST_FILE = YTAnimationPopViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TonyAng.YTAnimationPopViewDemo;
